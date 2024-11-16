@@ -41,24 +41,28 @@
         }
     })
 
-    // CERTIFICATES CAROUSEL
-    $('#certificates-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1,
-            },
-            900:{
-                items:2,
-            },
-            1200:{
-                items:3,
-                loop:false
-            }
+// CERTIFICATES CAROUSEL
+$('#certificates-carousel').owlCarousel({
+    loop: true, // Keeps the slider looping
+    margin: 10,
+    responsiveClass: true,
+    autoplay: true, // Enables automatic sliding
+    autoplayTimeout: 2500, // Sets the interval to 3 seconds
+    autoplayHoverPause: true, // Pauses autoplay on hover
+    responsive: {
+        0: {
+            items: 1,
+        },
+        900: {
+            items: 2,
+        },
+        1200: {
+            items: 3,
+            loop: true
         }
-    })
+    }
+});
+
 
     // SMOOTHSCROLL
     $(function() {
