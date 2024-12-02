@@ -10,7 +10,7 @@
     $(window).on('scroll', function() {     
                                 
         /*----------------------------------------------------*/
-        /*  Navigtion Menu Scroll
+        /*  Navigation Menu Scroll
         /*----------------------------------------------------*/    
         
         var b = $(window).scrollTop();
@@ -36,7 +36,7 @@
             },
             1200:{
                 items:3,
-                loop:false
+                loop:true
             }
         }
     })
@@ -48,6 +48,27 @@ $('#certificates-carousel').owlCarousel({
     responsiveClass: true,
     autoplay: true, // Enables automatic sliding
     autoplayTimeout: 2500, // Sets the interval to 3 seconds
+    autoplayHoverPause: true, // Pauses autoplay on hover
+    responsive: {
+        0: {
+            items: 1,
+        },
+        900: {
+            items: 2,
+        },
+        1200: {
+            items: 3,
+            loop: true
+        }
+    }
+});
+// CERTIFICATES CAROUSEL
+$('#pdf-carousel').owlCarousel({
+    loop: true, // Keeps the slider looping
+    margin: 10,
+    responsiveClass: true,
+    autoplay: true, // Enables automatic sliding
+    autoplayTimeout: 3500, // Sets the interval to 3 seconds
     autoplayHoverPause: true, // Pauses autoplay on hover
     responsive: {
         0: {
